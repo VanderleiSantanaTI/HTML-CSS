@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Houver</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        div > p {
+            display: none;/*para esconder a paravra TEXTO ESCONDIDO*/
+        }
+        div:hover > p {
+            display: block;/*'bloco de exibição' mostra a palavra TEXTO ESCONDIDO*/
+            color: white;
+            background-color: red;
+            width: 300px;/*mexe na largura*/
+            text-align: justify;
+        }
+        div:hover{
+            color: red;/*fica vermelho ao passar com o mouse*/
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de houver</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse aqui
+        <p>TEXTO ESCONDIDO... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui dignissimos minima, ipsum debitis laudantium quam voluptatum quas laborum. At recusandae a inventore. Vero recusandae mollitia beatae quas quisquam nihil quis!</p>
+    </div>
+    <p> Fim do exemplo</p>
+</body>
+</html>
