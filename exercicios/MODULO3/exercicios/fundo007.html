@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alinhamento vertical</title>
     <style>
-          body {
-            height: 100vh;
-            background-color: rgb(0, 0, 0);
-            background-image: url(imagem/wallpaper002.jpg);
-            background-position: center center ;
-            background-repeat: repeat-y;/*repetir a imagem no eixo y*/
-            background-size:cover;/*cobre todo o fundo com a imagem*/
-          }
-          main {
-            font-size: 16px;
-            text-align: justify;
-            background-color: white;
-            width: 400px;
+
+          #container {
+            background-image: url(imagem/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;/*Fica relativo sob ao #conteudo*/
+            height: 96vh;/*preenche a tela ,mas poderá distorcer a imagem*/
             padding: 10px;
-            margin: auto;
-            border-radius: 15px;
+            background-color: purple
           }
+
+                #conteudo {
+                  background-image: url(imagem/target001.png);
+                  background-size: 100% 100%;
+
+                  position: absolute;/*Fica absoluto sobre o relação container*/
+                  height: 200px;
+                  width: 400px;
+                  background-color: yellow;
+
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);/*manter a imagem centralizada*/
+                }
     </style>
 </head>
 <body>
+  <section id="container">
+      <article id="conteudo">
 
-    <main>
-        <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem odio fuga similique, ab est labore, quasi tempora autem quisquam nemo quidem nobis quaerat, animi incidunt ad architecto consectetur molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium assumenda non nemo sint labore. Esse veniam iste facere officiis, voluptatum consequuntur maxime atque voluptates, alias repellendus cumque expedita quia illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aliquid quasi temporibus omnis ratione eaque fugiat, nobis nesciunt totam non maxime labore tempora quisquam quia doloribus et incidunt. Culpa, error. Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis et, sint nesciunt architecto consectetur reprehenderit ab possimus perspiciatis repellendus tenetur aspernatur quaerat expedita quas doloribus unde fugiat amet illum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem odio fuga similique, ab est labore, quasi tempora autem quisquam nemo quidem nobis quaerat, animi incidunt ad architecto consectetur molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium assumenda non nemo sint labore. Esse veniam iste facere officiis, voluptatum consequuntur maxime atque voluptates, alias repellendus cumque expedita quia illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aliquid quasi temporibus omnis ratione eaque fugiat, nobis nesciunt totam non maxime labore tempora quisquam quia doloribus et incidunt. Culpa, error. Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis et, sint nesciunt architecto consectetur reprehenderit ab possimus perspiciatis repellendus tenetur aspernatur quaerat expedita quas doloribus unde fugiat amet illum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem odio fuga similique, ab est labore, quasi tempora autem quisquam nemo quidem nobis quaerat, animi incidunt ad architecto consectetur molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium assumenda non nemo sint labore. Esse veniam iste facere officiis, voluptatum consequuntur maxime atque voluptates, alias repellendus cumque expedita quia illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aliquid quasi temporibus omnis ratione eaque fugiat, nobis nesciunt totam non maxime labore tempora quisquam quia doloribus et incidunt. Culpa, error. Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis et, sint nesciunt architecto consectetur reprehenderit ab possimus perspiciatis repellendus tenetur aspernatur quaerat expedita quas doloribus unde fugiat amet illum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem odio fuga similique, ab est labore, quasi tempora autem quisquam nemo quidem nobis quaerat, animi incidunt ad architecto consectetur molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium assumenda non nemo sint labore. Esse veniam iste facere officiis, voluptatum consequuntur maxime atque voluptates, alias repellendus cumque expedita quia illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aliquid quasi temporibus omnis ratione eaque fugiat, nobis nesciunt totam non maxime labore tempora quisquam quia doloribus et incidunt. Culpa, error. Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis et, sint nesciunt architecto consectetur reprehenderit ab possimus perspiciatis repellendus tenetur aspernatur quaerat expedita quas doloribus unde fugiat amet illum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem odio fuga similique, ab est labore, quasi tempora autem quisquam nemo quidem nobis quaerat, animi incidunt ad architecto consectetur molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium assumenda non nemo sint labore. Esse veniam iste facere officiis, voluptatum consequuntur maxime atque voluptates, alias repellendus cumque expedita quia illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aliquid quasi temporibus omnis ratione eaque fugiat, nobis nesciunt totam non maxime labore tempora quisquam quia doloribus et incidunt. Culpa, error. Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis et, sint nesciunt architecto consectetur reprehenderit ab possimus perspiciatis repellendus tenetur aspernatur quaerat expedita quas doloribus unde fugiat amet illum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem odio fuga similique, ab est labore, quasi tempora autem quisquam nemo quidem nobis quaerat, animi incidunt ad architecto consectetur molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium assumenda non nemo sint labore. Esse veniam iste facere officiis, voluptatum consequuntur maxime atque voluptates, alias repellendus cumque expedita quia illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aliquid quasi temporibus omnis ratione eaque fugiat, nobis nesciunt totam non maxime labore tempora quisquam quia doloribus et incidunt. Culpa, error. Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis et, sint nesciunt architecto consectetur reprehenderit ab possimus perspiciatis repellendus tenetur aspernatur quaerat expedita quas doloribus unde fugiat amet illum dolor.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem odio fuga similique, ab est labore, quasi tempora autem quisquam nemo quidem nobis quaerat, animi incidunt ad architecto consectetur molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium assumenda non nemo sint labore. Esse veniam iste facere officiis, voluptatum consequuntur maxime atque voluptates, alias repellendus cumque expedita quia illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aliquid quasi temporibus omnis ratione eaque fugiat, nobis nesciunt totam non maxime labore tempora quisquam quia doloribus et incidunt. Culpa, error. Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis et, sint nesciunt architecto consectetur reprehenderit ab possimus perspiciatis repellendus tenetur aspernatur quaerat expedita quas doloribus unde fugiat amet illum dolor.</p>
+      </article>
 
-    </main>
+  </section>
+  
 </body>
 </html>
