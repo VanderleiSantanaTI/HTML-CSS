@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    border: 1px solid  black;
+    background-color: #2409BD;
+    color: white;
+    
+}
+header h1 {
+    text-align: center;
+}
+header nav{
+    padding: 10px;
+}
+
+
+
+
+
+section{
+    
+    display: flex;
+    flex-direction: row;
+
+}
+main{
+    padding: 3vw;
+    border: 1px solid black;
+    height: 80vh;
+    background-color: #999;
+    flex:1;
+}
+aside{
+    padding: 3vw;
+    border: 1px solid black;
+    height: 70vh;
+    background-color: yellow;
+    width: 30vw;
+    flex: 2;
+}
+
+
+    
+
+p#img{
+    text-align: center;
+    background-color: #999;
+
+}
+img{
+    width: 80%;
+    background-color: #160670;  
+}
+
+
+
+footer{
+    display:block;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 20px;
+    background-color: #160670;
+    color: white;
+}
+
+
+
+
+
+p{
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav, input, button, h1{
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
